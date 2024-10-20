@@ -2,14 +2,14 @@
 <html lang="en" dir="ltr">
   <head>    
     <link rel="canonical" href="{{ config.url }}{{ page.url }}">
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="{{ config.url }}/css/styles.css" />
 
     <title>{% if title and title != 'Home' %}{{title}} - {% endif %}{{ config.siteTitle }}</title>
 
     <!-- Icons -->
-    <link rel="shortcut icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16" />
-    <link rel="shortcut icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32" />
-    <link rel="apple-touch-icon" type="image/png" href="/images/apple-touch-icon.png" />
+    <link rel="shortcut icon" type="image/png" href="{{ config.url }}/images/favicon-16x16.png" sizes="16x16" />
+    <link rel="shortcut icon" type="image/png" href="{{ config.url }}/images/favicon-32x32.png" sizes="32x32" />
+    <link rel="apple-touch-icon" type="image/png" href="{{ config.url }}/images/apple-touch-icon.png" />
 
     <!-- Meta -->
     <meta name="description" content="{% if description %}{{ description }}{% else %}{{ config.description }}{% endif %}">
