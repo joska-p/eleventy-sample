@@ -15,7 +15,8 @@
   "type": "module",
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "dayjs": "^1.11.13"
+    "dayjs": "^1.11.13",
+    "netlify-plugin-cache": "^1.0.3"
   },
   "devDependencies": {
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
