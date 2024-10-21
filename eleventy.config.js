@@ -1,4 +1,3 @@
-import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight"
 import dayjs from "dayjs"
 
 export default async function (eleventyConfig) {
@@ -27,7 +26,4 @@ export default async function (eleventyConfig) {
 
   eleventyConfig.setInputDirectory("src")
   eleventyConfig.setOutputDirectory("public")
-
-  // Plugins
-  eleventyConfig.addPlugin(syntaxHighlight)
 }

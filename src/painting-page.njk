@@ -1,0 +1,21 @@
+---
+tags: painting
+layout: base
+pagination:
+  data: paintings
+  size: 1
+  alias: painting
+  addAllPagesToCollections: true
+permalink: "paintings/{{ painting.slug }}/"
+eleventyComputed:
+  title: "{{ painting.title }}"
+  filename: "{{ painting.filename }}"
+---
+
+{{ painting.title }} is from {{ painting.year }} !
+
+<img
+  src="{{ config.url }}/images/paintings/normal/{{ painting.filename }}"
+  width="{{ painting.imageWidth }}"
+  height="{{ painting.imageHeight }}"
+/>
